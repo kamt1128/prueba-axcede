@@ -35,11 +35,11 @@ jobs:
         run: npm run build
       # Route file renaming
       - name: Rename index for routing
-        run: mv dist/front-axede/index.html dist/front-axede/404.html
+        run: mv dist/front-axede/browser/index.html dist/front-axede/browser/404.html
       # Deploy to Github pages
       - name: Deploy to Pages
         uses: crazy-max/ghaction-github-pages@v4.0.0
         with: 
-          build_dir: dist/front-axede
+          build_dir: dist/front-axede/browser
         env: 
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
