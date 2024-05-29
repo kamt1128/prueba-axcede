@@ -1,0 +1,86 @@
+.booking {
+    margin: 0 auto;
+    padding: 32px;
+    background: url(../assets/image/booking-background.jpg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.bokking-container {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    padding: 50px 32px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        font-family: Pangram-Bold, "Helvetica Neue", sans-serif;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+    &__subtitle {
+        font-family: Pangram-Regular, "Helvetica Neue", sans-serif;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    &__button {
+        background-color: #ff6b6b;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        cursor: pointer;
+        font-family: Pangram-Regular, "Helvetica Neue", sans-serif;
+        font-size: 16px;
+        padding: 8px 16px;
+        text-transform: uppercase;
+        transition: background-color 0.3s;
+        &:hover {
+            background-color: #ff4f4f;
+        }
+        margin: 16px 0;
+        align-self: flex-end;
+    }
+}
+
+.form-booking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 16px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    &__label {
+        font-family: Pangram-Regular, "Helvetica Neue", sans-serif;
+        font-size: 14px;
+        text-align: right;
+    }
+    &__input {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        height: 35px;
+        padding: 0 8px;
+        width: 200px;
+        &--number {
+            width: 100px;
+        }
+    }
+}
+
+.search-result-container {
+    &__title {
+        font-family: Pangram-Bold, "Helvetica Neue", sans-serif;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+}
