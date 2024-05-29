@@ -13,9 +13,12 @@
     border-radius: 50px;
     padding: 50px 32px;
     width: 100%;
+    min-height: calc(100vh - 64px);
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top: 5px solid #950943;
+    border-bottom: 5px solid #950943;
     &__title {
         font-family: Pangram-Bold, "Helvetica Neue", sans-serif;
         text-align: center;
@@ -27,7 +30,7 @@
         margin-bottom: 32px;
     }
     &__button {
-        background-color: #ff6b6b;
+        background-color: #950943;
         border: none;
         border-radius: 5px;
         color: white;
@@ -38,10 +41,11 @@
         text-transform: uppercase;
         transition: background-color 0.3s;
         &:hover {
-            background-color: #ff4f4f;
+            background-color: #5c0127;
         }
         margin: 16px 0;
         align-self: flex-end;
+        letter-spacing: 1px;
     }
 }
 
@@ -61,7 +65,7 @@
     justify-content: center;
     gap: 10px;
     &__label {
-        font-family: Pangram-Regular, "Helvetica Neue", sans-serif;
+        font-family: Pangram-Medium, "Helvetica Neue", sans-serif;
         font-size: 14px;
         text-align: right;
     }
@@ -78,9 +82,16 @@
 }
 
 .search-result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
     &__title {
         font-family: Pangram-Bold, "Helvetica Neue", sans-serif;
         text-align: center;
         margin-bottom: 8px;
+    }
+    &__waiting-icon {
+        margin-top: 100px;
     }
 }
